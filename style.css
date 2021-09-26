@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Nunito&display=swap');
+
+:root{
+    --primary-color: black;
+    --secondary-color: red;
+    --textarea-color: orange;
+}
+body{
+  font-family: 'Grechen Fuemen', cursive;
+font-family: 'Nunito', sans-serif;
+  color: var(--secondary-color);
+}
+
+
+h1{
+    font-weight: bolder;
+    text-align: center;
+}
+
+.container{
+    width: 40%;
+    margin: auto;
+}
+
+label{
+    font-size: 1.7rem;
+    font-weight: lighter;
+}
+
+label, input{
+    display: block;
+    padding: 0.5rem;
+    text-align: center; 
+    border-radius: 0.5;
+
+}
+
+input{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+#check-number{
+ display: block;
+    margin-top: 1rem;
+    margin:  auto;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    color: var(--secondary-color);;
+    overflow: hidden;
+     border-color: var(--secondary-color);
+    border-width: medium;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    font-size: 1.7rem;
+
+}
+
+#check-number::before{
+    content:'';
+    position: absolute;
+    top: 0; left:0 ;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: black;
+    clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%);
+    transition:.4s linear;
+}
+
+#check-number:hover::before{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+
+#message{
+    display: block;
+    width: 80%;
+    height: 4rem;
+    margin: auto;
+    padding: 1rem;
+    margin-top: 3rem;
+    color: black;
+    background: grey;
+    border-color: orange;
+    border-width: large;
+    border-radius: 0.5rem;
+    text-align:  center;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.footer{
+  
+  font-size: 2rem;
+  
+  color:  green;
+  background-color: orange;
+   display: block;
+    width:100%;
+    height: 4rem;
+    margin: auto;
+    padding: 1rem;
+    margin-top: 3rem;
+
+}
+
+::placeholder{
+    font-size: 1rem; 
+    font-weight: lighter;
+ font-family: 'Grechen Fuemen', cursive;
+font-family: 'Nunito', sans-serif;
+    color:  black;
+}
