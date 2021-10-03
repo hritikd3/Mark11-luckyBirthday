@@ -17,7 +17,7 @@
         <input placeholder="Enter DOB" type="date" id="date-of-birth">
 
         <label for="lucky-number">Lucky Number</label>
-        <input placeholder="Enter lucky number!" type="number" id="lucky-number">
+        <input placeholder="Enter lucky number!" type="number" id="lucky-number"  min="1" oninput="validity.valid||(value='');>
 
         <button id="check-number">Check Here</button>
 
